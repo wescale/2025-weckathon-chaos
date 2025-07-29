@@ -5,3 +5,5 @@ Ce répertoire contient le code utilisé lors de notre journée de Weckathon 202
 - [k3s](./k3s/) : scripts d'installation de notre environnement kubernetes de test.
 - [k6](./k6/) : script k6 utiliser pour simuler une charge utilisateurs.
 - [chaos-mesh](./chaos-mesh/) : définitions des experiences chaos-mesh réalisées.
+
+Lien vers l'article de blog associé : <à compléter>
