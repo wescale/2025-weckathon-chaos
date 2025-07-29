@@ -1,0 +1,17 @@
+kind: NetworkChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: wordpress
+  name: network-delay-experiment
+spec:
+  selector:
+    namespaces:
+      - wordpress
+  mode: all
+  action: delay
+  duration: 1m
+  delay:
+    latency: 20ms
+    correlation: '100'
+    jitter: 0ms
+  direction: to

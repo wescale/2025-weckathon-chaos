@@ -1,0 +1,14 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: wordpress
+  name: kill-pod-experiment
+spec:
+  selector:
+    namespaces:
+      - wordpress
+    labelSelectors:
+      app.kubernetes.io/name: wordpress
+  mode: fixed
+  value: '1'
+  action: pod-kill

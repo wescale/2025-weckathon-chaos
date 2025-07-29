@@ -1,0 +1,21 @@
+kind: StressChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: wordpress
+  name: memory-stress-experiment
+spec:
+  selector:
+    namespaces:
+      - wordpress
+    labelSelectors:
+      app.kubernetes.io/name: wordpress
+    pods:
+      wordpress:
+        - wordpress-854fbd45f-4s2qf
+  mode: fixed
+  value: '1'
+  stressors:
+    memory:
+      workers: 4
+      size: 256MB
+  duration: 1m
