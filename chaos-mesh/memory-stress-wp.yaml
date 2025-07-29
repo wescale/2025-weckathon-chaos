@@ -17,5 +17,5 @@ spec:
   stressors:
     memory:
       workers: 4
-      size: 256MB
+      size: 384MB
   duration: 1m
