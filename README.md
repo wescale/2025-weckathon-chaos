@@ -5,6 +5,6 @@ Ce répertoire contient le code utilisé lors de notre journée de Weckathon 202
 - [k6](./k6/) : script k6 utiliser pour simuler une charge utilisateurs.
 - [chaos-mesh](./chaos-mesh/) : définitions des experiences chaos-mesh réalisées.
 
-Lien vers l'article de blog associé : <à compléter>
+Lien vers l'article de blog associé : [Semer le Chaos en moins de 24h : on vous raconte notre Weckathon !](https://blog.wescale.fr/semer-le-chaos-en-moins-de-24h-on-vous-raconte-notre-weckathon)
 
 ![Lab illustration](./img/lab.svg)
